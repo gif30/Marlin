@@ -503,10 +503,23 @@
 
 // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
+/* HOW TO PID https://www.youtube.com/watch?v=h9Rdid-T-Gw
+ * M502 (optional, load factory config)
+ * M501 (optional, load eeprom config)
+ * M303 S215 C10 (start PID test)
+ * M301 Pxx.xx Ix.xx Dxx.xx (Load new PID values)
+ * M500 save on eeprom
+ */
+
+// Titan Aero 215 grad Celcious
+#define DEFAULT_Kp 33.41
+#define DEFAULT_Ki 2.82
+#define DEFAULT_Kd 99.03
+
 // Ultimaker
-#define DEFAULT_Kp 22.2
-#define DEFAULT_Ki 1.08
-#define DEFAULT_Kd 114
+//#define DEFAULT_Kp 22.2
+//#define DEFAULT_Ki 1.08
+//#define DEFAULT_Kd 114
 
 // MakerGear
 //#define DEFAULT_Kp 7.0
